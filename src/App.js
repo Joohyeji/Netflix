@@ -7,11 +7,11 @@ function App() {
   const onChange = (e) => setKeyword(e.target.value);
   console.log('render');
   useEffect(() => {
-    console.log('Call the API....')
+    console.log('Call the API....');
   }, []); //딱 한 번 실행
   useEffect(() => {
-    if(keyword !== '' && keyword.length > 5)
-    console.log('SEARCH FOR',keyword)
+    if (keyword !== '' && keyword.length > 5)
+      console.log('SEARCH FOR', keyword);
   }, [keyword]); //keyword가 변할 때 마다 실행
   return (
     <div>
